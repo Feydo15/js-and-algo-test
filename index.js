@@ -2,48 +2,33 @@
 
 let Names = ["bob", "smith", "longman"];
 
-const getNames = (Names) => {
-  for (let i = 0; i < Names.length; i++) {
-
-    if (Names[i] > i.length) {
-
-      result = `${[i]}`;
-
-      return result;
+var longest = Names.reduce(
+    function (a, b) {
+        return a.length > b.length ? a : b;
     }
-  }
-};
-console.log("names", result);
+);
+console.log("names", longest);
 
 //
 // function 2
 
-const sum = (a, b) => {
+const sumNum = (a, b) => {
 
   return a + b;
 };
-sum();
+sumNum();
 
 console.log(sum(2, 3));
 
 
 //  function 3
+const array = [1, 2, 3, 4];
+let sum = 0;
 
-const getSum = (num) => {
-  let numbers = [1, 2, 3, 4, 5];
-
-  for (let i = num; i < numbers.length; i++) {
-    if ((i = num)) {
-      result(num + num);
-
-      return result;
-    }
-  }
-};
-
-getSum();
-
-console.log(results);
+for (let i = 0; i < array.length; i++) {
+    sum += array[i];
+}
+console.log(sum);
 
 // function 4
 let str = [{name:"moral" , surname: "smith"}]
